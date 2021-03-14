@@ -1,0 +1,101 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./mesh-gradient.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh ;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#27d3a8, #143959);
+    clip-path: circle(30% at center 50%);
+}
+
+.glass-card {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.album-pic img {
+    border-radius: 25px;
+    opacity: 70%;
+}
+
+.track-info {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.playback-timeline {
+    color: white;
+}
+
+.playback-past {
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+}
+
+.playback-post {
+    height: 3px;
+    background: grey;
+    border-radius: 5px;
+}
+
+.glass-button {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    color: white;
+    border-radius: 50%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.js-tilt-glare {
+    border-radius: 50px;
+}
+
+.result-list li {
+    opacity: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    background: transparent;
+    margin: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.grabber {
+    cursor: grab;
+}
+
+.result-list li:hover {
+    font-weight: 600;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Player</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mb-3">
+        <div class="glass-card d-flex justify-content-center flex-column">
+          <div class="album-pic text-center mb-3">
+            <img class="img-fluid" src="./inrainbows.png" alt="album-pic">
+          </div>
+          <div class="track-info mb-3">
+            Reckoner - Radiohead
+          </div>
+          <div>
+            <div class="mb-5 row mx-1 d-flex align-items-center playback-timeline">
+              <div class="col-2 m-0 p-0 text-left">3:33</div>
+              <div class="col-6 m-0 p-0 playback-past"></div>
+              <div class="col-2 m-0 p-0 playback-post"></div>
+              <div class="col-2 m-0 p-0 text-right">4:50</div>
+            </div>
+            <div class="row mx-1 d-flex justify-content-center align-items-center playback-buttons">
+              <div class="col p-0 m-0 text-center">
+                <button class="glass-button" style="height: 40px; width: 40px;">
+                  <i class="fas fa-redo"></i>
+                </button>
+              </div>
+              <div class="col p-0 m-0 text-center">
+                <button class="glass-button" style="height: 50px; width: 50px;">
+                  <i class="fas fa-backward"></i>
+                </button>
+              </div>
+              <div class="col p-0 m-0 text-center">
+                <button class="glass-button" style="height: 65px; width: 65px;">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+              <div class="col p-0 m-0 text-center">
+                <button class="glass-button" style="height: 50px; width: 50px;">
+                  <i class="fas fa-forward"></i>
+                </button>
+              </div>
+              <div class="col p-0 m-0 text-center">
+                <button class="glass-button" style="height: 40px; width: 40px;">
+                  <i class="fas fa-random"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 d-flex justify-content-center flex-column">
+        <div class="glass-card">
+          <div class="ml-2 mb-3" style="color: white; font-weight: 600;">
+            <h2>Playlist</h2>
+          </div>
+          <div class="result-list">
+            <ul style="list-style: none; padding-left: 0;">
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">15 Steps</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">Bodysnatchers</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">Nude</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">Weird Fishes/Arpeggi</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">All I Need</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">Faust Arp</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">House of Cards</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">Jigsaw Falling into Place</span>
+              </li>
+              <li>
+                <i class="fas fa-grip-vertical mr-3 grabber"></i>
+                <span class="m-0 p-0">Videotape</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script type="text/javascript" src="../node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".glass-card"), {
+      max: 0,
+      glare: true,
+      "max-glare": 0.2
+    });
+  </script>
+</body>
+</html>
