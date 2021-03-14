@@ -1,4 +1,4 @@
-# Neumorphic design
+# Frontend playground
 
 Simple html/css designs just for fun.
 
